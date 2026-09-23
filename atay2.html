@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ala-too </title>
+</head>
+<body>
+    
+        <table border="1">
+            <tbody><tr>
+                <th> Предметы</th>
+                <th> Навыки в предмете</th>
+
+            </tr><tr>
+                <td>SAT</td>
+                <td> 50%</td>
+            </tr>
+            
+
+        </tbody></table>
+    
+    <img src="data:image/svg+xml,%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;480&#39; height=&#39;180&#39; viewBox=&#39;0 0 480 180&#39;%3E%3Crect width=&#39;480&#39; height=&#39;180&#39; fill=&#39;%23eef3f8&#39;/%3E%3Cpath d=&#39;M100 70L240 15L380 70Z&#39; fill=&#39;%23324c70&#39;/%3E%3Cpath d=&#39;M120 75H360V150H120Z&#39; fill=&#39;%23bccbdd&#39;/%3E%3Cpath d=&#39;M150 85V140M210 85V140M270 85V140M330 85V140&#39; stroke=&#39;white&#39; stroke-width=&#39;20&#39;/%3E%3Cpath d=&#39;M100 160H380&#39; stroke=&#39;%23324c70&#39; stroke-width=&#39;12&#39;/%3E%3C/svg%3E" alt="">
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
